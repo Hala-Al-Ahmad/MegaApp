@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">project_bank</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="link_policy" translatable="false">
+        I Agree To <a href="https://www.privacypolicygenerator.info/#wizard">Terms Of Service And Privacy. </a>
+    </string>
+
+    <string name="changeLanguage" translatable="false"> Change Language </string>
+</resources>

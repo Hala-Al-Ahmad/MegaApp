@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personal_page_his">
+
+    <ImageView
+        android:id="@+id/right_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/arrow_right"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="359dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintEnd_toStartOf="@id/My_history"/>
+
+    <TextView
+        android:id="@+id/My_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="offers history"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="27.3dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@id/right_3"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/search_view"
+        android:backgroundTint="#EAEAEA"
+        />
+
+       <ImageView
+           android:id="@+id/image_his_1"
+           app:layout_constraintTop_toTopOf="parent"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:src="@drawable/image_his"
+           android:layout_marginTop="150dp"
+           android:layout_marginEnd="300dp"
+           android:layout_marginStart="20dp"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="170dp"
+        android:text="Hekaih OutLet"
+        android:textColor="#292D32"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="120dp"
+        android:text="2022/10/24 -"
+        android:textColor="#292D32"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="210dp"
+        android:text="Offers up to 70%"
+        android:textColor="#FF2020"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_his_2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_his"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="260dp"
+        android:text="Hekaih OutLet"
+        android:textColor="#292D32"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_marginStart="120dp"
+        android:text="2022/10/24 -"
+        android:textColor="#292D32"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_marginStart="210dp"
+        android:text="Offers up to 70%"
+        android:textColor="#FF2020"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/image_his_3"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_his"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="360dp"
+        android:text="Hekaih OutLet"
+        android:textColor="#292D32"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginStart="120dp"
+        android:text="2022/10/24 -"
+        android:textColor="#292D32"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginStart="210dp"
+        android:text="Offers up to 70%"
+        android:textColor="#FF2020"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

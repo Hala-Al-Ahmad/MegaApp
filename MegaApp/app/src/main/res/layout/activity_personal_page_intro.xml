@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personal_page_intro">
+
+    <ImageView
+        android:id="@+id/right_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/arrow_right"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="359dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/personal_info"/>
+
+    <TextView
+        android:id="@+id/personal_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Personal Info"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="27.3dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@id/right_2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+         android:text="Account info"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="90dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/profile_name"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="259dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/full"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Full Name">
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/changeName"
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pho"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changePhone"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bir"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Birthday">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changeBirthday"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gen"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Gender">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changeGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pass"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="650dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changePassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

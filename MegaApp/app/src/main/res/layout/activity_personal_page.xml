@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personal_page">
+
+
+   <ImageView
+       android:id="@+id/right_1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       android:src="@drawable/arrow_right"
+       android:layout_marginTop="28dp"
+       android:layout_marginEnd="359dp"
+       android:layout_marginStart="28dp"
+       app:layout_constraintEnd_toStartOf="@id/My_profile"/>
+
+    <TextView
+        android:id="@+id/My_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="27.3dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@id/right_1"/>
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toTopOf="parent"
+     android:layout_marginTop="60dp">
+
+     <TextView
+         android:id="@+id/account_txt"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="15dp"
+         android:layout_marginStart="25dp"
+         android:text="Account"
+         android:textSize="28dp"
+         android:textColor="#192126"
+         android:textStyle="bold"/>
+
+     <ImageView
+         android:id="@+id/profile_image"
+         android:layout_width="match_parent"
+         android:layout_height="71dp"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/account_txt"
+         android:layout_marginTop="60dp"
+         android:layout_marginEnd="290dp"
+         android:layout_marginStart="20dp"
+         android:src="@drawable/profile_image"/>
+
+   <TextView
+       android:id="@+id/User_Name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toEndOf="@id/profile_image"
+       android:layout_marginTop="70dp"
+       android:layout_marginStart="120dp"
+       android:layout_marginEnd="100dp"
+       android:text="Hala Abdul-Salam"
+       android:textColor="#192126"
+       android:textSize="22dp"
+       android:textStyle="bold"/>
+
+     <TextView
+         android:id="@+id/Edit_text"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintStart_toEndOf="@id/profile_image"
+         android:layout_marginTop="100dp"
+         android:layout_marginStart="120dp"
+         android:layout_marginEnd="100dp"
+         android:text="edit my info"
+         android:textColor="#828282"
+         android:textSize="16dp"/>
+
+     <ImageView
+         android:id="@+id/image_translate_home"
+         android:layout_width="match_parent"
+         android:layout_height="49dp"
+         app:layout_constraintTop_toTopOf="parent"
+         android:src="@drawable/image_translate"
+         android:layout_marginStart="350dp"
+         android:layout_marginTop="66dp"
+         android:layout_marginEnd="20dp"
+         />
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Other"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="200dp"
+        android:textSize="28dp"
+        android:textColor="#192126"
+        android:textStyle="bold"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/other"
+        android:layout_marginTop="10dp">
+
+
+        <ImageView
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/history"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="350dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:text="Offers History"
+            android:textSize="22dp"
+            android:textColor="#192126"
+            />
+
+        <ImageView
+            android:id="@+id/image_translate_history"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/image_translate"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/about_us"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="350dp"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="80dp"
+            android:text="About Us"
+            android:textSize="22dp"
+            android:textColor="#192126"
+            android:layout_marginTop="85dp"
+            />
+        <ImageView
+            android:id="@+id/image_translateAbout"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/image_translate"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/terms_privacy"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="350dp"
+            android:layout_marginTop="150dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="80dp"
+            android:text="terms and privacy policy"
+            android:textSize="22dp"
+            android:textColor="#192126"
+            android:layout_marginTop="156dp" />
+
+
+        <ImageView
+            android:id="@+id/image_translatePolicy"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/image_translate"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="153dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/translate"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="350dp"
+            android:layout_marginTop="225dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="80dp"
+            android:text="Language"
+            android:textSize="22dp"
+            android:textColor="#192126"
+            android:layout_marginTop="230dp" />
+
+        <ImageView
+            android:id="@+id/image_translateLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/image_translate"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/not"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="350dp"
+            android:layout_marginTop="300dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="80dp"
+            android:text="Notification"
+            android:textSize="22dp"
+            android:textColor="#192126"
+            android:layout_marginTop="310dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/image_translateNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/image_translate"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd ="10dp"
+            android:textOn="on"
+            android:textOff="off"
+            />
+
+        <ImageView
+            android:id="@+id/sign_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/sign_out"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="350dp"
+            android:layout_marginTop="370dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="80dp"
+            android:text="Sign out"
+            android:textSize="22dp"
+            android:textColor="#192126"
+            android:layout_marginTop="380dp" />
+
+        <ImageView
+            android:id="@+id/image_translateSignout"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/image_translate"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="370dp"
+            android:layout_marginEnd="20dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

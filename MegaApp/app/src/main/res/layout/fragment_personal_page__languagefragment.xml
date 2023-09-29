@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".personal_page_Languagefragment">
+
+    <TextView
+        android:id="@+id/Language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Language"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="170dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="choose your favorite language"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#808080"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        />
+
+  <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginTop="150dp">
+      
+      <RadioButton
+          android:id="@+id/language_english"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="English"
+
+          />
+      <RadioButton
+          android:id="@+id/language_Arabic"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Arabic"
+          />
+  </RadioGroup>
+
+    <Button
+        android:id="@+id/cansel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/confirm"
+        android:background="@drawable/round_button"
+        android:text="cansel"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="259dp"
+        android:layout_marginStart="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/round_button"
+        android:text="confirm"
+        app:layout_constraintStart_toEndOf="@id/cansel"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="259dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
